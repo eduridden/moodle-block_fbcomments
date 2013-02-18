@@ -31,6 +31,10 @@ class block_fbcomments_edit_form extends block_edit_form {
         $mform->setType('config_url', PARAM_TEXT); 
         $mform->setDefault('config_url', 'your adress here');
 
+		$mform->addElement('text', 'config_appid', get_string('appid', 'block_fbcomments'));
+        $mform->setType('config_appid', PARAM_INT); 
+        $mform->setDefault('config_appid', '117741798382276');
+
 		$mform->addElement('text', 'config_width', get_string('width', 'block_fbcomments'));
         $mform->setType('config_width', PARAM_INT); 
         $mform->setDefault('config_width', 200);
@@ -42,6 +46,8 @@ class block_fbcomments_edit_form extends block_edit_form {
         $mform->addElement('text', 'config_title', get_string('title', 'block_fbcomments'));
         $mform->setType('config_title', PARAM_TEXT); 
         $mform->setDefault('config_title', get_string('pluginname', 'block_fbcomments'));
+
+
         
         
     }

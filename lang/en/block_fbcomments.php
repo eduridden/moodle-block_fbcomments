@@ -25,6 +25,7 @@
 
 $string['pluginname'] = 'Facebook Comments';
 $string['title'] = 'Custom Title';
+$string['appid'] = 'Facebook App ID';
 $string['numposts'] = 'Number of Comments to Display';
 $string['width'] = 'Block Width';
 $string['url'] = 'Site Address';

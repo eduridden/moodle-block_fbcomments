@@ -40,7 +40,8 @@ The block works with Moodle 2.5 (also tested with all other versions 2.x)
  - Add the block to your Moodle's "block" directory
  - Visit the admin "Notification" screen to deploy
  - Add to the block to the page you wish to see the feature added to.
- - Edit the block by clicking on the settings button.
+ - To use the full features of this block you will need a Facebook Application ID. To signup for an AppID visit http://developers.facebook.com/setup
+ - Edit the block by clicking on the settings button on the block to enter AppID, width, URL and other info.
 
 
 ======================

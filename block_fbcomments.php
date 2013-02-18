@@ -27,8 +27,7 @@ class block_fbcomments extends block_base {
 
     function init() {
         global $PAGE;
-        $this->title = get_string('pluginname', 'block_fbcomments'); 
-		$PAGE->requires->js('/blocks/fbcomments/facebook.js');       
+        $this->title = get_string('pluginname', 'block_fbcomments');       
     }
 
     function applicable_formats() {
@@ -69,6 +68,8 @@ class block_fbcomments extends block_base {
  	           
         $context = get_context_instance(CONTEXT_BLOCK, $this->instance->id);
         $admin_context = get_context_instance(CONTEXT_COURSE, $COURSE->id);
+
+		$appid = $this->config->appid;
 		
                          
             $html = '<div id="fb-root"></div> ' .
